@@ -24,8 +24,6 @@ source ~/.zshrc    # macOS
 uv sync
 ```
 
-### 3. Lancer le projet
+### 3. Lancer les notebooks 
 
-```bash
-uv run main.py
-```
+
