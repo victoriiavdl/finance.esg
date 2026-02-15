@@ -1,0 +1,24 @@
+Ticker,Entreprise,Env_Score,Soc_Score,ESG_Score,K-means,CAH,K-means ACP,GMM
+NVDA US Equity,NVIDIA,6.77,5.97,6.5,2,5,1,2
+AVGO US Equity,Broadcom,2.34,1.97,3.32,1,1,4,1
+TSM US Equity,TSMC,4.08,4.46,4.6,4,6,3,3
+GOOGL US Equity,Alphabet,4.45,1.85,3.59,5,7,4,1
+000660 KS Equity,SK Hynix,3.91,2.9,4.1,7,8,6,6
+LRCX US Equity,Lam Research,5.11,3.39,5.22,9,9,3,3
+6857 JP Equity,Advantest,6.57,4.57,5.83,2,5,1,2
+TSEM IT Equity,Tower Semi,1.55,1.89,2.85,6,4,2,7
+MSFT US Equity,Microsoft,5.95,2.16,4.75,9,9,3,5
+LITE US Equity,Lumentum,0.59,2.52,2.9,6,4,2,7
+AMD US Equity,AMD,6.85,4.73,6.3,2,5,1,2
+FN US Equity,Fabrinet,3.53,0.78,2.58,8,2,2,1
+SNOW US Equity,Snowflake,0.0,1.46,1.88,3,3,5,4
+MU US Equity,Micron,3.85,4.79,5.15,4,6,3,3
+TSLA US Equity,Tesla,3.11,4.32,4.08,4,6,6,3
+9984 JP Equity,SoftBank,3.42,1.92,3.08,1,1,4,1
+CRDO US Equity,CREDO Tech,0.74,1.15,1.94,3,3,5,4
+ENR GR Equity,Siemens Energy,4.15,2.54,4.04,7,8,6,6
+MPWR US Equity,Monolithic Power,2.55,2.11,3.22,1,1,4,1
+2383 TT Equity,Elite Material,4.12,3.23,4.07,7,8,6,6
+CLS CN Equity,Celestica,3.97,4.17,4.69,4,6,3,3
+META US Equity,Meta,6.1,1.45,3.6,5,7,6,5
+AMZN US Equity,Amazon,2.9,2.54,3.57,1,1,4,1
