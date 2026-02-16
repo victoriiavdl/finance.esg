@@ -1,7 +1,5 @@
 # Projet finance ESG
 
-# Projet Finance ESG
-
 Reproduction et amélioration de l'étude présentée dans le papier de référence 
 *"K-means et analyse de clustering hiérarchique agglomératif des scores ESG, 
 variations annuelles et rendements boursiers"*, appliquée à un nouvel univers 
