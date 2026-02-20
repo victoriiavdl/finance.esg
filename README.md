@@ -23,6 +23,7 @@ alternatifs (DBSCAN, GMM) pour une segmentation plus robuste des profils ESG.
 │   ├── 03_ameliorations.ipynb
 │   ├── 04_generation_rendements_yahoo.ipynb
 │   ├── 05_analyse_esg_rendements_clustering.ipynb
+│   ├── 06_final.ipynb => NOTEBOOK FINAL PRÉSENTATION
 │   └── figures/
 ├── papier_référence/         # Article de référence
 └── pyproject.toml
