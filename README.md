@@ -15,7 +15,9 @@ Reproduction et amélioration de l'étude *"K-means et analyse de clustering hi�
 
 ## Dashboard interactif
 
-Les résultats sont présentés dans un **dashboard Streamlit** :
+👉 **[Accéder au dashboard en ligne](https://app-portfolio-cleanup-tzw3vu-kadmdkzuw7sjqngj9trncd.streamlit.app/)**
+
+Les résultats sont aussi disponibles en local :
 
 ```bash
 uv run streamlit run streamlit_app/app.py
