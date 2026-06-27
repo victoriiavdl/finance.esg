@@ -1,0 +1,445 @@
+Imports effectues avec succes.
+
+---
+
+[Environmental] Dimensions brutes : 122 lignes x 23 entreprises
+[Environmental] Periode : date Excel 42369 a 46052
+[Social] Dimensions brutes : 122 lignes x 23 entreprises
+[Social] Periode : date Excel 42369 a 46052
+[ESG] Dimensions brutes : 122 lignes x 23 entreprises
+[ESG] Periode : date Excel 42369 a 46052
+
+---
+
+Tickers Environmental : ['NVDA US Equity', 'AVGO US Equity', 'TSM US Equity', 'GOOGL US Equity', '000660 KS Equity', 'LRCX US Equity', '6857 JP Equity', 'TSEM IT Equity', 'MSFT US Equity', 'LITE US Equity', 'AMD US Equity', 'FN US Equity', 'SNOW US Equity', 'MU US Equity', 'TSLA US Equity', '9984 JP Equity', 'CRDO US Equity', 'ENR GR Equity', 'MPWR US Equity', '2383 TT Equity', 'CLS CN Equity', 'META US Equity', 'AMZN US Equity']
+
+Tickers Social : ['NVDA US Equity', 'AVGO US Equity', 'TSM US Equity', 'GOOGL US Equity', '000660 KS Equity', 'LRCX US Equity', '6857 JP Equity', 'TSEM IT Equity', 'MSFT US Equity', 'LITE US Equity', 'AMD US Equity', 'FN US Equity', 'SNOW US Equity', 'MU US Equity', 'TSLA US Equity', '9984 JP Equity', 'CRDO US Equity', 'ENR GR Equity', 'MPWR US Equity', '2383 TT Equity', 'CLS CN Equity', 'META US Equity', 'AMZN US Equity']
+
+Tickers ESG : ['NVDA US Equity', 'AVGO US Equity', 'TSM US Equity', 'GOOGL US Equity', '000660 KS Equity', 'LRCX US Equity', '6857 JP Equity', 'TSEM IT Equity', 'MSFT US Equity', 'LITE US Equity', 'AMD US Equity', 'FN US Equity', 'SNOW US Equity', 'MU US Equity', 'TSLA US Equity', '9984 JP Equity', 'CRDO US Equity', 'ENR GR Equity', 'MPWR US Equity', '2383 TT Equity', 'CLS CN Equity', 'META US Equity', 'AMZN US Equity']
+
+Tickers identiques dans les 3 fichiers : True
+
+---
+
+=== Apercu Environmental Score (brut) ===
+
+---
+
+Date_Excel NVDA US Equity AVGO US Equity TSM US Equity GOOGL US Equity  \
+0       42369            NaN            NaN          3,43            3,96   
+1       42398           6,48            NaN          3,43            3,96   
+2       42429           6,48            NaN          3,43            3,96   
+3       42460           6,48            NaN          3,43            3,96   
+4       42489           6,48            NaN          3,43            3,96   
+
+  000660 KS Equity LRCX US Equity 6857 JP Equity TSEM IT Equity  \
+0             2,94            NaN            NaN              0   
+1             2,94            NaN            NaN              0   
+2             2,94            NaN            NaN              0   
+3             2,94            NaN           5,39              0   
+4             2,94            NaN           5,39              0   
+
+  MSFT US Equity  ...  MU US Equity TSLA US Equity 9984 JP Equity  \
+0            NaN  ...           NaN           1,65            NaN   
+1            NaN  ...           NaN           1,65            NaN   
+2            NaN  ...           NaN           1,65            NaN   
+3            NaN  ...           NaN           1,65           1,84   
+4            NaN  ...           NaN           1,65           1,84   
+
+   CRDO US Equity ENR GR Equity MPWR US Equity 2383 TT Equity  CLS CN Equity  \
+0             NaN           NaN              0            NaN           2,43   
+1             NaN           NaN              0            NaN           2,43   
+2             NaN           NaN              0            NaN           2,43   
+3             NaN           NaN              0            NaN           2,43   
+4             NaN           NaN              0            NaN           2,43   
+
+  META US Equity AMZN US Equity  
+0           2,64           0,31  
+1           2,64           0,31  
+2           2,64           0,31  
+3           2,64           0,31  
+4           2,64           0,31  
+
+[5 rows x 24 columns]
+
+---
+
+[Environmental] Apres nettoyage : 377/2806 valeurs manquantes (13.4%)
+[Environmental] Periode : 2015-12-31 a 2026-01-30
+[Social] Apres nettoyage : 377/2806 valeurs manquantes (13.4%)
+[Social] Periode : 2015-12-31 a 2026-01-30
+[ESG] Apres nettoyage : 377/2806 valeurs manquantes (13.4%)
+[ESG] Periode : 2015-12-31 a 2026-01-30
+
+---
+
+=== Environmental Score (nettoye) ===
+
+---
+
+Date  NVDA US Equity  AVGO US Equity  TSM US Equity  GOOGL US Equity  \
+0 2015-12-31             NaN             NaN           3.43             3.96   
+1 2016-01-29            6.48             NaN           3.43             3.96   
+2 2016-02-29            6.48             NaN           3.43             3.96   
+3 2016-03-31            6.48             NaN           3.43             3.96   
+4 2016-04-29            6.48             NaN           3.43             3.96   
+
+   000660 KS Equity  LRCX US Equity  6857 JP Equity  TSEM IT Equity  \
+0              2.94             NaN             NaN             0.0   
+1              2.94             NaN             NaN             0.0   
+2              2.94             NaN             NaN             0.0   
+3              2.94             NaN            5.39             0.0   
+4              2.94             NaN            5.39             0.0   
+
+   MSFT US Equity  ...  MU US Equity  TSLA US Equity  9984 JP Equity  \
+0             NaN  ...           NaN            1.65             NaN   
+1             NaN  ...           NaN            1.65             NaN   
+2             NaN  ...           NaN            1.65             NaN   
+3             NaN  ...           NaN            1.65            1.84   
+4             NaN  ...           NaN            1.65            1.84   
+
+   CRDO US Equity  ENR GR Equity  MPWR US Equity  2383 TT Equity  \
+0             NaN            NaN             0.0             NaN   
+1             NaN            NaN             0.0             NaN   
+2             NaN            NaN             0.0             NaN   
+3             NaN            NaN             0.0             NaN   
+4             NaN            NaN             0.0             NaN   
+
+   CLS CN Equity  META US Equity  AMZN US Equity  
+0           2.43            2.64            0.31  
+1           2.43            2.64            0.31  
+2           2.43            2.64            0.31  
+3           2.43            2.64            0.31  
+4           2.43            2.64            0.31  
+
+[5 rows x 24 columns]
+
+---
+
+=== Social Score (nettoye) ===
+
+---
+
+Date  NVDA US Equity  AVGO US Equity  TSM US Equity  GOOGL US Equity  \
+0 2015-12-31             NaN             NaN           3.61             0.71   
+1 2016-01-29            3.49             NaN           3.61             0.71   
+2 2016-02-29            3.49             NaN           3.61             0.71   
+3 2016-03-31            3.49             NaN           3.61             0.71   
+4 2016-04-29            3.49             NaN           3.61             0.71   
+
+   000660 KS Equity  LRCX US Equity  6857 JP Equity  TSEM IT Equity  \
+0              2.84             NaN             NaN            1.03   
+1              2.84             NaN             NaN            1.03   
+2              2.84             NaN             NaN            1.03   
+3              2.84             NaN            1.62            1.03   
+4              2.84             NaN            1.62            1.03   
+
+   MSFT US Equity  ...  MU US Equity  TSLA US Equity  9984 JP Equity  \
+0             NaN  ...           NaN            3.17             NaN   
+1             NaN  ...           NaN            3.17             NaN   
+2             NaN  ...           NaN            3.17             NaN   
+3             NaN  ...           NaN            3.17             1.7   
+4             NaN  ...           NaN            3.17             1.7   
+
+   CRDO US Equity  ENR GR Equity  MPWR US Equity  2383 TT Equity  \
+0             NaN            NaN            1.62             NaN   
+1             NaN            NaN            1.62             NaN   
+2             NaN            NaN            1.62             NaN   
+3             NaN            NaN            1.62             NaN   
+4             NaN            NaN            1.62             NaN   
+
+   CLS CN Equity  META US Equity  AMZN US Equity  
+0           1.54            0.77            1.26  
+1           1.54            0.77            1.26  
+2           1.54            0.77            1.26  
+3           1.54            0.77            1.26  
+4           1.54            0.77            1.26  
+
+[5 rows x 24 columns]
+
+---
+
+=== ESG Score global (nettoye) ===
+
+---
+
+Date  NVDA US Equity  AVGO US Equity  TSM US Equity  GOOGL US Equity  \
+0 2015-12-31             NaN             NaN           4.05             2.76   
+1 2016-01-29            5.66             NaN           4.05             2.76   
+2 2016-02-29            5.66             NaN           4.05             2.76   
+3 2016-03-31            5.66             NaN           4.05             2.76   
+4 2016-04-29            5.66             NaN           4.05             2.76   
+
+   000660 KS Equity  LRCX US Equity  6857 JP Equity  TSEM IT Equity  \
+0              3.47             NaN             NaN            1.67   
+1              3.47             NaN             NaN            1.67   
+2              3.47             NaN             NaN            1.67   
+3              3.47             NaN            3.74            1.67   
+4              3.47             NaN            3.74            1.67   
+
+   MSFT US Equity  ...  MU US Equity  TSLA US Equity  9984 JP Equity  \
+0             NaN  ...           NaN            3.03             NaN   
+1             NaN  ...           NaN            3.03             NaN   
+2             NaN  ...           NaN            3.03             NaN   
+3             NaN  ...           NaN            3.03             2.4   
+4             NaN  ...           NaN            3.03             2.4   
+
+   CRDO US Equity  ENR GR Equity  MPWR US Equity  2383 TT Equity  \
+0             NaN            NaN            1.93             NaN   
+1             NaN            NaN            1.93             NaN   
+2             NaN            NaN            1.93             NaN   
+3             NaN            NaN            1.93             NaN   
+4             NaN            NaN            1.93             NaN   
+
+   CLS CN Equity  META US Equity  AMZN US Equity  
+0           2.93            2.28            1.89  
+1           2.93            2.28            1.89  
+2           2.93            2.28            1.89  
+3           2.93            2.28            1.89  
+4           2.93            2.28            1.89  
+
+[5 rows x 24 columns]
+
+---
+
+Dimensions du panel : (2806, 5)
+Nombre d'entreprises : 23
+Nombre de dates : 122
+
+---
+
+Date            Ticker  Env_Score  Soc_Score  ESG_Score
+0 2015-12-31  000660 KS Equity       2.94       2.84       3.47
+1 2016-01-29  000660 KS Equity       2.94       2.84       3.47
+2 2016-02-29  000660 KS Equity       2.94       2.84       3.47
+3 2016-03-31  000660 KS Equity       2.94       2.84       3.47
+4 2016-04-29  000660 KS Equity       2.94       2.84       3.47
+5 2016-05-31  000660 KS Equity       2.94       2.84       3.47
+6 2016-06-30  000660 KS Equity       2.94       2.84       3.47
+7 2016-07-29  000660 KS Equity       2.94       2.84       3.47
+8 2016-08-31  000660 KS Equity       2.94       2.84       3.47
+9 2016-09-30  000660 KS Equity       2.94       2.84       3.47
+
+---
+
+Entreprises du panel :
+  AMD US Equity             -> AMD
+  6857 JP Equity            -> Advantest
+  GOOGL US Equity           -> Alphabet (Google)
+  AMZN US Equity            -> Amazon
+  AVGO US Equity            -> Broadcom
+  CRDO US Equity            -> CREDO Technology
+  CLS CN Equity             -> Celestica
+  2383 TT Equity            -> Elite Material
+  FN US Equity              -> Fabrinet
+  LRCX US Equity            -> Lam Research
+  LITE US Equity            -> Lumentum
+  META US Equity            -> Meta Platforms
+  MU US Equity              -> Micron Technology
+  MSFT US Equity            -> Microsoft
+  MPWR US Equity            -> Monolithic Power Systems
+  NVDA US Equity            -> NVIDIA
+  000660 KS Equity          -> SK Hynix
+  ENR GR Equity             -> Siemens Energy
+  SNOW US Equity            -> Snowflake
+  9984 JP Equity            -> SoftBank
+  TSM US Equity             -> TSMC
+  TSLA US Equity            -> Tesla
+  TSEM IT Equity            -> Tower Semiconductor
+
+---
+
+Pourcentage de valeurs manquantes par entreprise (%) :
+                           Env   Soc   ESG  Moyenne
+CREDO Technology          62.3  62.3  62.3     62.3
+Elite Material            59.0  59.0  59.0     59.0
+Fabrinet                  54.1  54.1  54.1     54.1
+Snowflake                 50.0  50.0  50.0     50.0
+Siemens Energy            46.7  46.7  46.7     46.7
+Broadcom                   8.2   8.2   8.2      8.2
+Micron Technology          7.4   7.4   7.4      7.4
+Lumentum                   5.7   5.7   5.7      5.7
+Lam Research               4.9   4.9   4.9      4.9
+Microsoft                  4.9   4.9   4.9      4.9
+Advantest                  2.5   2.5   2.5      2.5
+SoftBank                   2.5   2.5   2.5      2.5
+NVIDIA                     0.8   0.8   0.8      0.8
+AMD                        0.0   0.0   0.0      0.0
+Tesla                      0.0   0.0   0.0      0.0
+Tower Semiconductor        0.0   0.0   0.0      0.0
+SK Hynix                   0.0   0.0   0.0      0.0
+Alphabet (Google)          0.0   0.0   0.0      0.0
+Monolithic Power Systems   0.0   0.0   0.0      0.0
+TSMC                       0.0   0.0   0.0      0.0
+Celestica                  0.0   0.0   0.0      0.0
+Meta Platforms             0.0   0.0   0.0      0.0
+Amazon                     0.0   0.0   0.0      0.0
+
+---
+
+Date de premiere observation disponible par entreprise et par score :
+
+                              Env      Soc      ESG
+NVIDIA                    2016-01  2016-01  2016-01
+Broadcom                  2016-10  2016-10  2016-10
+TSMC                      2015-12  2015-12  2015-12
+Alphabet (Google)         2015-12  2015-12  2015-12
+SK Hynix                  2015-12  2015-12  2015-12
+Lam Research              2016-06  2016-06  2016-06
+Advantest                 2016-03  2016-03  2016-03
+Tower Semiconductor       2015-12  2015-12  2015-12
+Microsoft                 2016-06  2016-06  2016-06
+Lumentum                  2016-07  2016-07  2016-07
+AMD                       2015-12  2015-12  2015-12
+Fabrinet                  2021-06  2021-06  2021-06
+Snowflake                 2021-01  2021-01  2021-01
+Micron Technology         2016-09  2016-09  2016-09
+Tesla                     2015-12  2015-12  2015-12
+SoftBank                  2016-03  2016-03  2016-03
+CREDO Technology          2022-04  2022-04  2022-04
+Siemens Energy            2020-09  2020-09  2020-09
+Monolithic Power Systems  2015-12  2015-12  2015-12
+Elite Material            2021-12  2021-12  2021-12
+Celestica                 2015-12  2015-12  2015-12
+Meta Platforms            2015-12  2015-12  2015-12
+Amazon                    2015-12  2015-12  2015-12
+
+---
+
+[Environmental] Entreprises supprimées (5) : ['Fabrinet', 'Snowflake', 'CREDO Technology', 'Siemens Energy', 'Elite Material']
+[Environmental] Entreprises conservées : 18
+[Environmental] NaN restants après traitement : 0
+
+[Social] Entreprises supprimées (5) : ['Fabrinet', 'Snowflake', 'CREDO Technology', 'Siemens Energy', 'Elite Material']
+[Social] Entreprises conservées : 18
+[Social] NaN restants après traitement : 0
+
+[ESG] Entreprises supprimées (5) : ['Fabrinet', 'Snowflake', 'CREDO Technology', 'Siemens Energy', 'Elite Material']
+[ESG] Entreprises conservées : 18
+[ESG] NaN restants après traitement : 0
+
+--- Résumé ---
+Entreprises restantes : 18
+Période : 2015-12-31 à 2026-01-30
+NaN total restant : 0
+
+---
+
+Pourcentage de valeurs manquantes après traitement (%) :
+                          Env  Soc  ESG  Moyenne
+NVIDIA                    0.0  0.0  0.0      0.0
+Broadcom                  0.0  0.0  0.0      0.0
+Meta Platforms            0.0  0.0  0.0      0.0
+Celestica                 0.0  0.0  0.0      0.0
+Monolithic Power Systems  0.0  0.0  0.0      0.0
+SoftBank                  0.0  0.0  0.0      0.0
+Tesla                     0.0  0.0  0.0      0.0
+Micron Technology         0.0  0.0  0.0      0.0
+AMD                       0.0  0.0  0.0      0.0
+Lumentum                  0.0  0.0  0.0      0.0
+Microsoft                 0.0  0.0  0.0      0.0
+Tower Semiconductor       0.0  0.0  0.0      0.0
+Advantest                 0.0  0.0  0.0      0.0
+Lam Research              0.0  0.0  0.0      0.0
+SK Hynix                  0.0  0.0  0.0      0.0
+Alphabet (Google)         0.0  0.0  0.0      0.0
+TSMC                      0.0  0.0  0.0      0.0
+Amazon                    0.0  0.0  0.0      0.0
+
+---
+
+Entreprises communes aux 3 scores : 18
+Panel : 2196 observations, 18 entreprises
+Période : 2015-12-31 à 2026-01-30
+NaN restants : 0
+
+---
+
+============================================================
+STATISTIQUES DESCRIPTIVES DU PANEL
+============================================================
+
+--- Environmental ---
+count    2196.000
+mean        4.093
+std         2.146
+min         0.000
+25%         2.670
+50%         4.350
+75%         5.730
+max         7.610
+
+--- Social ---
+count    2196.000
+mean        3.175
+std         1.724
+min         0.630
+25%         1.860
+50%         2.590
+75%         4.390
+max         7.910
+
+--- ESG Global ---
+count    2196.000
+mean        4.273
+std         1.396
+min         1.670
+25%         3.240
+50%         4.190
+75%         5.250
+max         7.070
+
+---
+
+Classement des entreprises par score ESG global (derniere observation) :
+                  Entreprise  Env_Score  Soc_Score  ESG_Score
+1                  Advantest       7.28       6.52       7.07
+2                        AMD       7.17       5.58       6.85
+3                     NVIDIA       7.13       6.54       6.81
+4                  Celestica       5.58       6.22       6.12
+5          Micron Technology       3.98       6.06       5.63
+6                       TSMC       4.57       6.31       5.48
+7                  Microsoft       5.62       3.03       5.12
+8                      Tesla       4.62       5.05       5.01
+9               Lam Research       5.21       2.68       4.96
+10                  Broadcom       4.96       2.57       4.82
+11                  SK Hynix       4.41       3.29       4.66
+12  Monolithic Power Systems       4.95       2.49       4.49
+13                    Amazon       4.24       2.99       4.36
+14         Alphabet (Google)       5.21       2.56       4.26
+15            Meta Platforms       7.31       2.03       4.23
+16       Tower Semiconductor       2.98       3.26       3.99
+17                  SoftBank       6.61       1.99       3.92
+18                  Lumentum       1.00       3.98       3.73
+
+---
+
+Matrice de correlation :
+           Env_Score  Soc_Score  ESG_Score
+Env_Score     1.0000     0.4435     0.8230
+Soc_Score     0.4435     1.0000     0.8342
+ESG_Score     0.8230     0.8342     1.0000
+
+---
+
+Statistiques des variations annuelles du score ESG Global :
+        NVIDIA  Broadcom     TSMC  Alphabet  SK Hynix  Lam Research  Advantest  Tower Semico  Microsoft  Lumentum      AMD  Fabrinet  Snowflake  Micron Techn    Tesla  SoftBank  CREDO Techno  Siemens Ener  Monolithic P  Elite Materi  Celestica  Meta Platfor   Amazon
+count  109.000   100.000  110.000   110.000   110.000       104.000    107.000       110.000    104.000   103.000  110.000    44.000     49.000       101.000  110.000   107.000        34.000        53.000       110.000        38.000    110.000       110.000  110.000
+mean     0.127     0.352    0.156     0.164     0.130         0.062      0.373         0.253      0.119     0.235    0.191     0.142     -0.002         0.223    0.216     0.170         0.279         0.052         0.279         0.145      0.348         0.213    0.269
+std      0.334     0.567    0.234     0.286     0.342         0.360      0.360         0.394      0.451     0.380    0.268     0.171      0.063         0.284    0.451     0.156         0.361         0.217         0.280         0.177      0.683         0.306    0.451
+min     -0.590    -0.220   -0.120    -0.280    -0.390        -0.430      0.000        -0.320     -0.750    -0.320   -0.270    -0.070     -0.060        -0.330   -0.290    -0.010         0.000        -0.120        -0.050         0.000     -0.140        -0.190   -0.220
+25%      0.000     0.000   -0.030     0.000    -0.130        -0.170      0.120         0.000     -0.040     0.000    0.000    -0.070     -0.050         0.000   -0.080     0.010         0.000        -0.090         0.000         0.000      0.020         0.000    0.040
+50%      0.150     0.080    0.150     0.110     0.240         0.000      0.200         0.210      0.000     0.100    0.180     0.290      0.000         0.280    0.060     0.150         0.030         0.000         0.310         0.060      0.140         0.050    0.050
+75%      0.270     0.350    0.320     0.380     0.390         0.390      0.530         0.380      0.400     0.240    0.350     0.300      0.000         0.440    0.300     0.270         0.760         0.000         0.440         0.400      0.290         0.450    0.460
+max      0.740     2.470    0.660     0.740     0.560         0.590      1.010         1.010      0.930     0.980    0.680     0.300      0.100         0.560    1.330     0.490         0.760         0.440         0.740         0.400      2.250         0.780    1.390
+
+---
+
+Fichiers sauvegardes dans data/clean/01_exploration/ :
+  env_score_clean.csv                      (13.3 Ko)
+  env_score_variations.csv                 (32.1 Ko)
+  esg_score_clean.csv                      (13.7 Ko)
+  esg_score_variations.csv                 (37.1 Ko)
+  panel_complet.csv                        (111.4 Ko)
+  soc_score_clean.csv                      (13.8 Ko)
+  soc_score_variations.csv                 (29.3 Ko)

@@ -1,0 +1,228 @@
+Imports effectues.
+
+---
+
+Donnees chargees : 23 entreprises, 3 variables
+
+---
+
+=== Analyse en Composantes Principales ===
+
+Valeurs propres (variance expliquee) :
+  PC1 : valeur propre = 2.629, variance expliquee = 83.8%
+  PC2 : valeur propre = 0.482, variance expliquee = 15.4%
+  PC3 : valeur propre = 0.025, variance expliquee = 0.8%
+
+Variance cumulee :
+  PC1-PC1 : 83.8%
+  PC1-PC2 : 99.2%
+  PC1-PC3 : 100.0%
+
+---
+
+Matrice des loadings (contributions des variables aux composantes) :
+             PC1    PC2    PC3
+Env_Score  0.548  0.723 -0.421
+Soc_Score  0.555 -0.690 -0.464
+ESG_Score  0.626 -0.020  0.780
+
+---
+
+Nombre de composantes retenues (>=80% variance) : 1
+Composantes utilisees pour le clustering : PC1 a PC1
+Variance totale retenue : 83.8%
+
+K optimal sur ACP : k = 6 (silhouette = 0.642)
+
+---
+
+Concordance clustering original vs clustering ACP :
+  ARI = 0.562
+  Interpretation : concordance moderee
+
+---
+
+eps suggere par le k-distance graph : 2.08
+
+---
+
+Meilleure configuration DBSCAN :
+  eps = 0.5, min_samples = 2
+  Clusters = 5, Bruit = 10
+  Silhouette = 0.671
+
+---
+
+Entreprises identifiees comme outliers par DBSCAN :
+  - NVIDIA
+  - Alphabet
+  - Lam Research
+  - Tower Semi
+  - Microsoft
+  - Lumentum
+  - Fabrinet
+  - Micron
+  - Tesla
+  - Meta
+
+---
+
+Meilleur modele GMM (BIC minimal) :
+  k = 7, covariance = full
+  BIC = 80.2, AIC = 1.9
+  Silhouette = 0.376
+
+---
+
+=== GMM (full, k=7) ===
+
+Probabilites d'appartenance et certitude :
+                  P(Cluster 1)  P(Cluster 2)  P(Cluster 3)  P(Cluster 4)  P(Cluster 5)  P(Cluster 6)  P(Cluster 7)  Cluster        Entreprise  Certitude
+Ticker                                                                                                                                                  
+000660 KS Equity           0.0           0.0           0.0           0.0           0.0           1.0           0.0        6          SK Hynix        1.0
+ENR GR Equity              0.0           0.0           0.0           0.0           0.0           1.0           0.0        6    Siemens Energy        1.0
+2383 TT Equity             0.0           0.0           0.0           0.0           0.0           1.0           0.0        6    Elite Material        1.0
+TSEM IT Equity             0.0           0.0           0.0           0.0           0.0           0.0           1.0        7        Tower Semi        1.0
+CLS CN Equity              0.0           0.0           1.0           0.0           0.0           0.0           0.0        3         Celestica        1.0
+META US Equity             0.0           0.0           0.0           0.0           1.0           0.0           0.0        5              Meta        1.0
+MU US Equity               0.0           0.0           1.0           0.0           0.0           0.0           0.0        3            Micron        1.0
+LITE US Equity             0.0           0.0           0.0           0.0           0.0           0.0           1.0        7          Lumentum        1.0
+TSM US Equity              0.0           0.0           1.0           0.0           0.0           0.0           0.0        3              TSMC        1.0
+GOOGL US Equity            1.0           0.0           0.0           0.0           0.0           0.0           0.0        1          Alphabet        1.0
+MSFT US Equity             0.0           0.0           0.0           0.0           1.0           0.0           0.0        5         Microsoft        1.0
+TSLA US Equity             0.0           0.0           1.0           0.0           0.0           0.0           0.0        3             Tesla        1.0
+LRCX US Equity             0.0           0.0           1.0           0.0           0.0           0.0           0.0        3      Lam Research        1.0
+CRDO US Equity             0.0           0.0           0.0           1.0           0.0           0.0           0.0        4        CREDO Tech        1.0
+SNOW US Equity             0.0           0.0           0.0           1.0           0.0           0.0           0.0        4         Snowflake        1.0
+9984 JP Equity             1.0           0.0           0.0           0.0           0.0           0.0           0.0        1          SoftBank        1.0
+AMZN US Equity             1.0           0.0           0.0           0.0           0.0           0.0           0.0        1            Amazon        1.0
+MPWR US Equity             1.0           0.0           0.0           0.0           0.0           0.0           0.0        1  Monolithic Power        1.0
+NVDA US Equity             0.0           1.0           0.0           0.0           0.0           0.0           0.0        2            NVIDIA        1.0
+6857 JP Equity             0.0           1.0           0.0           0.0           0.0           0.0           0.0        2         Advantest        1.0
+AVGO US Equity             1.0           0.0           0.0           0.0           0.0           0.0           0.0        1          Broadcom        1.0
+AMD US Equity              0.0           1.0           0.0           0.0           0.0           0.0           0.0        2               AMD        1.0
+FN US Equity               1.0           0.0           0.0           0.0           0.0           0.0           0.0        1          Fabrinet        1.0
+
+---
+
+Concordance (ARI) entre partitions obtenues avec differentes distances :
+
+             Euclidienne  Manhattan  Cosinus  Correlation
+Euclidienne        1.000      0.804    0.330        0.142
+Manhattan          0.804      1.000    0.486        0.209
+Cosinus            0.330      0.486    1.000        0.208
+Correlation        0.142      0.209    0.208        1.000
+
+---
+
+Clustering temporel effectue sur 122 dates
+Score de silhouette moyen : 0.390
+
+---
+
+Nombre de changements de cluster par entreprise :
+
+                  n_changements  n_observations  taux_stabilite
+TSMC                       48.0           122.0        0.603306
+Elite Material             19.0            50.0        0.612245
+Advantest                  45.0           119.0        0.618644
+Celestica                  46.0           122.0        0.619835
+Micron                     41.0           113.0        0.633929
+Tesla                      44.0           122.0        0.636364
+Lumentum                   41.0           115.0        0.640351
+NVIDIA                     42.0           121.0        0.650000
+Lam Research               40.0           116.0        0.652174
+Microsoft                  40.0           116.0        0.652174
+Monolithic Power           42.0           122.0        0.652893
+SK Hynix                   42.0           122.0        0.652893
+Meta                       41.0           122.0        0.661157
+Amazon                     41.0           122.0        0.661157
+SoftBank                   39.0           119.0        0.669492
+Fabrinet                   18.0            56.0        0.672727
+Broadcom                   36.0           112.0        0.675676
+Tower Semi                 39.0           122.0        0.677686
+Snowflake                  19.0            61.0        0.683333
+Alphabet                   38.0           122.0        0.685950
+AMD                        37.0           122.0        0.694215
+Siemens Energy             19.0            65.0        0.703125
+CREDO Tech                 11.0            46.0        0.755556
+
+Taux de stabilite moyen : 0.659
+Entreprise la plus stable : CREDO Tech (0.756)
+Entreprise la moins stable : TSMC (0.603)
+
+---
+
+Bootstrap termine (200 iterations)
+Silhouette bootstrap : 0.329 +/- 0.048
+IC 95% : [0.221, 0.401]
+
+---
+
+Interpretation : une valeur proche de 1 signifie que les deux entreprises
+sont systematiquement affectees au meme cluster, quel que soit l'echantillon.
+Une valeur proche de 0.5 indique une affectation instable.
+
+---
+
+======================================================================
+SYNTHESE COMPARATIVE DES METHODES DE CLUSTERING
+======================================================================
+                    k  Silhouette  Calinski-Harabasz  Davies-Bouldin
+Methode                                                             
+K-means (original)  9       0.426             34.535           0.594
+CAH Ward            9       0.426             34.535           0.594
+K-means (ACP)       6       0.642            147.887           0.345
+GMM (full)          7       0.376             29.222           0.638
+DBSCAN              5       0.671             92.194           0.334
+
+Rappel des criteres :
+  - Silhouette : a maximiser (entre -1 et 1)
+  - Calinski-Harabasz : a maximiser
+  - Davies-Bouldin : a minimiser
+
+---
+
+Matrice de concordance ARI :
+             K-means  CAH Ward  K-means ACP    GMM
+K-means        1.000     1.000        0.562  0.681
+CAH Ward       1.000     1.000        0.562  0.681
+K-means ACP    0.562     0.562        1.000  0.623
+GMM            0.681     0.681        0.623  1.000
+
+---
+
+================================================================================
+TABLEAU FINAL : AFFECTATION DES ENTREPRISES PAR METHODE
+================================================================================
+                        Entreprise  Env_Score  Soc_Score  ESG_Score  K-means  CAH  K-means ACP  GMM
+Ticker                                                                                             
+NVDA US Equity              NVIDIA       6.77       5.97       6.50        2    5            1    2
+AVGO US Equity            Broadcom       2.34       1.97       3.32        1    1            4    1
+TSM US Equity                 TSMC       4.08       4.46       4.60        4    6            3    3
+GOOGL US Equity           Alphabet       4.45       1.85       3.59        5    7            4    1
+000660 KS Equity          SK Hynix       3.91       2.90       4.10        7    8            6    6
+LRCX US Equity        Lam Research       5.11       3.39       5.22        9    9            3    3
+6857 JP Equity           Advantest       6.57       4.57       5.83        2    5            1    2
+TSEM IT Equity          Tower Semi       1.55       1.89       2.85        6    4            2    7
+MSFT US Equity           Microsoft       5.95       2.16       4.75        9    9            3    5
+LITE US Equity            Lumentum       0.59       2.52       2.90        6    4            2    7
+AMD US Equity                  AMD       6.85       4.73       6.30        2    5            1    2
+FN US Equity              Fabrinet       3.53       0.78       2.58        8    2            2    1
+SNOW US Equity           Snowflake       0.00       1.46       1.88        3    3            5    4
+MU US Equity                Micron       3.85       4.79       5.15        4    6            3    3
+TSLA US Equity               Tesla       3.11       4.32       4.08        4    6            6    3
+9984 JP Equity            SoftBank       3.42       1.92       3.08        1    1            4    1
+CRDO US Equity          CREDO Tech       0.74       1.15       1.94        3    3            5    4
+ENR GR Equity       Siemens Energy       4.15       2.54       4.04        7    8            6    6
+MPWR US Equity    Monolithic Power       2.55       2.11       3.22        1    1            4    1
+2383 TT Equity      Elite Material       4.12       3.23       4.07        7    8            6    6
+CLS CN Equity            Celestica       3.97       4.17       4.69        4    6            3    3
+META US Equity                Meta       6.10       1.45       3.60        5    7            6    5
+AMZN US Equity              Amazon       2.90       2.54       3.57        1    1            4    1
+
+---
+
+Resultats finaux sauvegardes :
+  - data/clean/resultats_finaux.csv
+  - data/clean/synthese_metriques.csv

@@ -1,0 +1,312 @@
+Imports effectues.
+
+---
+
+Panel charge : 2196 observations, 18 entreprises
+
+---
+
+Matrice de clustering (moyennes) : 23 entreprises x 3 variables
+Matrice de clustering (derniere obs) : 23 entreprises x 3 variables
+
+Apercu (moyennes) :
+
+---
+
+Env_Score  Soc_Score  ESG_Score        Entreprise
+Ticker                                                             
+NVDA US Equity        6.770      5.966      6.500            NVIDIA
+AVGO US Equity        2.342      1.967      3.325          Broadcom
+TSM US Equity         4.080      4.457      4.604              TSMC
+GOOGL US Equity       4.449      1.851      3.589          Alphabet
+000660 KS Equity      3.914      2.900      4.098          SK Hynix
+LRCX US Equity        5.110      3.391      5.225      Lam Research
+6857 JP Equity        6.572      4.570      5.835         Advantest
+TSEM IT Equity        1.552      1.895      2.848        Tower Semi
+MSFT US Equity        5.954      2.160      4.749         Microsoft
+LITE US Equity        0.591      2.524      2.898          Lumentum
+AMD US Equity         6.848      4.728      6.299               AMD
+FN US Equity          3.529      0.775      2.579          Fabrinet
+SNOW US Equity        0.000      1.460      1.876         Snowflake
+MU US Equity          3.852      4.787      5.154            Micron
+TSLA US Equity        3.111      4.315      4.079             Tesla
+9984 JP Equity        3.422      1.920      3.080          SoftBank
+CRDO US Equity        0.739      1.148      1.936        CREDO Tech
+ENR GR Equity         4.154      2.537      4.043    Siemens Energy
+MPWR US Equity        2.549      2.105      3.223  Monolithic Power
+2383 TT Equity        4.124      3.234      4.065    Elite Material
+CLS CN Equity         3.973      4.174      4.687         Celestica
+META US Equity        6.096      1.452      3.600              Meta
+AMZN US Equity        2.901      2.536      3.565            Amazon
+
+---
+
+Donnees standardisees (moyenne=0, ecart-type=1) :
+  Moyennes apres standardisation : [ 0. -0.  0.]
+  Ecarts-types apres standardisation : [1. 1. 1.]
+
+Apercu :
+
+---
+
+Env_Score  Soc_Score  ESG_Score
+Ticker                                           
+NVDA US Equity     1.585504   2.243286   2.034145
+AVGO US Equity    -0.752304  -0.688820  -0.542844
+TSM US Equity      0.165475   1.136822   0.495072
+GOOGL US Equity    0.360028  -0.774184  -0.328394
+000660 KS Equity   0.077891  -0.005189   0.084936
+
+---
+
+Metriques calculees pour k = 2 a 10
+
+---
+
+Resume des k optimaux :
+  Silhouette      : k = 9 (score = 0.426)
+  Calinski-Harabasz: k = 9 (score = 34.5)
+  Davies-Bouldin  : k = 10 (score = 0.505)
+
+---
+
+=== Resultats K-means (k = 9) ===
+
+--- Cluster 1 (4 entreprises) ---
+  Broadcom              Env=2.34  Soc=1.97  ESG=3.32
+  SoftBank              Env=3.42  Soc=1.92  ESG=3.08
+  Monolithic Power      Env=2.55  Soc=2.11  ESG=3.22
+  Amazon                Env=2.90  Soc=2.54  ESG=3.57
+  [Moyennes] Env=2.80  Soc=2.13  ESG=3.30
+
+--- Cluster 2 (3 entreprises) ---
+  NVIDIA                Env=6.77  Soc=5.97  ESG=6.50
+  Advantest             Env=6.57  Soc=4.57  ESG=5.83
+  AMD                   Env=6.85  Soc=4.73  ESG=6.30
+  [Moyennes] Env=6.73  Soc=5.09  ESG=6.21
+
+--- Cluster 3 (2 entreprises) ---
+  Snowflake             Env=0.00  Soc=1.46  ESG=1.88
+  CREDO Tech            Env=0.74  Soc=1.15  ESG=1.94
+  [Moyennes] Env=0.37  Soc=1.30  ESG=1.91
+
+--- Cluster 4 (4 entreprises) ---
+  TSMC                  Env=4.08  Soc=4.46  ESG=4.60
+  Micron                Env=3.85  Soc=4.79  ESG=5.15
+  Tesla                 Env=3.11  Soc=4.32  ESG=4.08
+  Celestica             Env=3.97  Soc=4.17  ESG=4.69
+  [Moyennes] Env=3.75  Soc=4.43  ESG=4.63
+
+--- Cluster 5 (2 entreprises) ---
+  Alphabet              Env=4.45  Soc=1.85  ESG=3.59
+  Meta                  Env=6.10  Soc=1.45  ESG=3.60
+  [Moyennes] Env=5.27  Soc=1.65  ESG=3.59
+
+--- Cluster 6 (2 entreprises) ---
+  Tower Semi            Env=1.55  Soc=1.89  ESG=2.85
+  Lumentum              Env=0.59  Soc=2.52  ESG=2.90
+  [Moyennes] Env=1.07  Soc=2.21  ESG=2.87
+
+--- Cluster 7 (3 entreprises) ---
+  SK Hynix              Env=3.91  Soc=2.90  ESG=4.10
+  Siemens Energy        Env=4.15  Soc=2.54  ESG=4.04
+  Elite Material        Env=4.12  Soc=3.23  ESG=4.07
+  [Moyennes] Env=4.06  Soc=2.89  ESG=4.07
+
+--- Cluster 8 (1 entreprises) ---
+  Fabrinet              Env=3.53  Soc=0.78  ESG=2.58
+  [Moyennes] Env=3.53  Soc=0.78  ESG=2.58
+
+--- Cluster 9 (2 entreprises) ---
+  Lam Research          Env=5.11  Soc=3.39  ESG=5.22
+  Microsoft             Env=5.95  Soc=2.16  ESG=4.75
+  [Moyennes] Env=5.53  Soc=2.78  ESG=4.99
+
+---
+
+Variance expliquee par les 2 composantes : 99.2%
+
+---
+
+Matrices de lien calculees pour : ['ward', 'complete', 'average', 'single']
+
+---
+
+=== Resultats CAH Ward (k = 9) ===
+
+--- Cluster 1 (4 entreprises) ---
+  Broadcom              Env=2.34  Soc=1.97  ESG=3.32
+  SoftBank              Env=3.42  Soc=1.92  ESG=3.08
+  Monolithic Power      Env=2.55  Soc=2.11  ESG=3.22
+  Amazon                Env=2.90  Soc=2.54  ESG=3.57
+  [Moyennes] Env=2.80  Soc=2.13  ESG=3.30
+
+--- Cluster 2 (1 entreprises) ---
+  Fabrinet              Env=3.53  Soc=0.78  ESG=2.58
+  [Moyennes] Env=3.53  Soc=0.78  ESG=2.58
+
+--- Cluster 3 (2 entreprises) ---
+  Snowflake             Env=0.00  Soc=1.46  ESG=1.88
+  CREDO Tech            Env=0.74  Soc=1.15  ESG=1.94
+  [Moyennes] Env=0.37  Soc=1.30  ESG=1.91
+
+--- Cluster 4 (2 entreprises) ---
+  Tower Semi            Env=1.55  Soc=1.89  ESG=2.85
+  Lumentum              Env=0.59  Soc=2.52  ESG=2.90
+  [Moyennes] Env=1.07  Soc=2.21  ESG=2.87
+
+--- Cluster 5 (3 entreprises) ---
+  NVIDIA                Env=6.77  Soc=5.97  ESG=6.50
+  Advantest             Env=6.57  Soc=4.57  ESG=5.83
+  AMD                   Env=6.85  Soc=4.73  ESG=6.30
+  [Moyennes] Env=6.73  Soc=5.09  ESG=6.21
+
+--- Cluster 6 (4 entreprises) ---
+  TSMC                  Env=4.08  Soc=4.46  ESG=4.60
+  Micron                Env=3.85  Soc=4.79  ESG=5.15
+  Tesla                 Env=3.11  Soc=4.32  ESG=4.08
+  Celestica             Env=3.97  Soc=4.17  ESG=4.69
+  [Moyennes] Env=3.75  Soc=4.43  ESG=4.63
+
+--- Cluster 7 (2 entreprises) ---
+  Alphabet              Env=4.45  Soc=1.85  ESG=3.59
+  Meta                  Env=6.10  Soc=1.45  ESG=3.60
+  [Moyennes] Env=5.27  Soc=1.65  ESG=3.59
+
+--- Cluster 8 (3 entreprises) ---
+  SK Hynix              Env=3.91  Soc=2.90  ESG=4.10
+  Siemens Energy        Env=4.15  Soc=2.54  ESG=4.04
+  Elite Material        Env=4.12  Soc=3.23  ESG=4.07
+  [Moyennes] Env=4.06  Soc=2.89  ESG=4.07
+
+--- Cluster 9 (2 entreprises) ---
+  Lam Research          Env=5.11  Soc=3.39  ESG=5.22
+  Microsoft             Env=5.95  Soc=2.16  ESG=4.75
+  [Moyennes] Env=5.53  Soc=2.78  ESG=4.99
+
+---
+
+Metriques de qualite (CAH Ward, k=9) :
+  Silhouette        : 0.426
+  Calinski-Harabasz : 34.5
+  Davies-Bouldin    : 0.594
+
+---
+
+Tableau de contingence K-means vs CAH :
+CAH      1  2  3  4  5  6  7  8  9  All
+K-means                                
+1        4  0  0  0  0  0  0  0  0    4
+2        0  0  0  0  3  0  0  0  0    3
+3        0  0  2  0  0  0  0  0  0    2
+4        0  0  0  0  0  4  0  0  0    4
+5        0  0  0  0  0  0  2  0  0    2
+6        0  0  0  2  0  0  0  0  0    2
+7        0  0  0  0  0  0  0  3  0    3
+8        0  1  0  0  0  0  0  0  0    1
+9        0  0  0  0  0  0  0  0  2    2
+All      4  1  2  2  3  4  2  3  2   23
+
+Indice de Rand ajuste (ARI) : 1.000
+Information mutuelle normalisee (NMI) : 1.000
+
+Interpretation :
+  ARI=1 : accord parfait, ARI=0 : assignation aleatoire
+  NMI=1 : accord parfait, NMI=0 : independance totale
+
+---
+
+Comparaison des metriques de qualite :
+                         K-means  CAH (Ward)
+Silhouette (max)           0.426       0.426
+Calinski-Harabasz (max)   34.535      34.535
+Davies-Bouldin (min)       0.594       0.594
+
+Meilleure methode par critere :
+  Silhouette        : K-means
+  Calinski-Harabasz : K-means
+  Davies-Bouldin    : K-means
+
+---
+
+Matrice de variations : 23 entreprises x 3 variables
+
+---
+
+Env_Var  Soc_Var  ESG_Var        Entreprise
+NVDA US Equity     0.0716   0.3358   0.1266            NVIDIA
+AVGO US Equity     0.5952   0.1368   0.3516          Broadcom
+TSM US Equity      0.1244   0.2945   0.1560              TSMC
+GOOGL US Equity    0.1364   0.2018   0.1636          Alphabet
+000660 KS Equity   0.1604   0.0491   0.1298          SK Hynix
+LRCX US Equity     0.1038   0.0992   0.0623      Lam Research
+6857 JP Equity     0.2120   0.5495   0.3735         Advantest
+TSEM IT Equity     0.3251   0.2433   0.2531        Tower Semi
+MSFT US Equity    -0.1073   0.2769   0.1188         Microsoft
+LITE US Equity     0.1165   0.3483   0.2353          Lumentum
+AMD US Equity      0.1571   0.2804   0.1909               AMD
+FN US Equity       0.3927   0.0545   0.1418          Fabrinet
+SNOW US Equity     0.0000   0.0000  -0.0024         Snowflake
+MU US Equity       0.1793   0.4194   0.2226            Micron
+TSLA US Equity     0.3240   0.2051   0.2160             Tesla
+9984 JP Equity     0.5350   0.0325   0.1705          SoftBank
+CRDO US Equity     0.3529   0.2929   0.2788        CREDO Tech
+ENR GR Equity     -0.1336   0.2242   0.0521    Siemens Energy
+MPWR US Equity     0.5400   0.0949   0.2793  Monolithic Power
+2383 TT Equity    -0.2147   0.7074   0.1453    Elite Material
+CLS CN Equity      0.3436   0.5105   0.3480         Celestica
+META US Equity     0.5095   0.1375   0.2127              Meta
+AMZN US Equity     0.4287   0.1887   0.2695            Amazon
+
+---
+
+Nombre optimal de clusters (variations) : k = 5 (silhouette = 0.383)
+
+---
+
+=== Clusters sur les variations annuelles (K-means, k=5) ===
+
+--- Cluster 1 (2 entreprises) ---
+  Advantest             dEnv=+0.212  dSoc=+0.550  dESG=+0.373
+  Celestica             dEnv=+0.344  dSoc=+0.511  dESG=+0.348
+
+--- Cluster 2 (7 entreprises) ---
+  NVIDIA                dEnv=+0.072  dSoc=+0.336  dESG=+0.127
+  TSMC                  dEnv=+0.124  dSoc=+0.295  dESG=+0.156
+  Alphabet              dEnv=+0.136  dSoc=+0.202  dESG=+0.164
+  Microsoft             dEnv=-0.107  dSoc=+0.277  dESG=+0.119
+  Lumentum              dEnv=+0.117  dSoc=+0.348  dESG=+0.235
+  AMD                   dEnv=+0.157  dSoc=+0.280  dESG=+0.191
+  Micron                dEnv=+0.179  dSoc=+0.419  dESG=+0.223
+
+--- Cluster 3 (9 entreprises) ---
+  Broadcom              dEnv=+0.595  dSoc=+0.137  dESG=+0.352
+  Tower Semi            dEnv=+0.325  dSoc=+0.243  dESG=+0.253
+  Fabrinet              dEnv=+0.393  dSoc=+0.055  dESG=+0.142
+  Tesla                 dEnv=+0.324  dSoc=+0.205  dESG=+0.216
+  SoftBank              dEnv=+0.535  dSoc=+0.033  dESG=+0.170
+  CREDO Tech            dEnv=+0.353  dSoc=+0.293  dESG=+0.279
+  Monolithic Power      dEnv=+0.540  dSoc=+0.095  dESG=+0.279
+  Meta                  dEnv=+0.509  dSoc=+0.137  dESG=+0.213
+  Amazon                dEnv=+0.429  dSoc=+0.189  dESG=+0.269
+
+--- Cluster 4 (4 entreprises) ---
+  SK Hynix              dEnv=+0.160  dSoc=+0.049  dESG=+0.130
+  Lam Research          dEnv=+0.104  dSoc=+0.099  dESG=+0.062
+  Snowflake             dEnv=+0.000  dSoc=+0.000  dESG=-0.002
+  Siemens Energy        dEnv=-0.134  dSoc=+0.224  dESG=+0.052
+
+--- Cluster 5 (1 entreprises) ---
+  Elite Material        dEnv=-0.215  dSoc=+0.707  dESG=+0.145
+
+---
+
+ARI moyen : 0.700 (+/- 0.118)
+Proportion de runs avec ARI > 0.9 : 2%
+
+---
+
+Resultats sauvegardes dans data/clean/notebook2/
+  - clustering_niveaux.csv
+  - clustering_variations.csv
+  - scores_standardises.csv

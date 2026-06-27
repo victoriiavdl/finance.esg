@@ -1,0 +1,13 @@
+Date            Ticker  Env_Score  Soc_Score  ESG_Score Entreprise  \
+0 2015-12-31  000660 KS Equity       2.94       2.84       3.47   SK Hynix   
+1 2016-01-31  000660 KS Equity       2.94       2.84       3.47   SK Hynix   
+2 2016-02-29  000660 KS Equity       2.94       2.84       3.47   SK Hynix   
+3 2016-03-31  000660 KS Equity       2.94       2.84       3.47   SK Hynix   
+4 2016-04-30  000660 KS Equity       2.94       2.84       3.47   SK Hynix   
+
+  Yahoo_Ticker    Return  
+0    000660.KS       NaN  
+1    000660.KS       NaN  
+2    000660.KS  0.098901  
+3    000660.KS -0.061667  
+4    000660.KS  0.000000

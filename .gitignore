@@ -1,3 +1,12 @@
 .idea/
 .venv/
 notebooks/figures/
+__pycache__/
+*.pyc
+
+# Données Bloomberg (licence propriétaire)
+data/*.csv
+data/clean/
+
+# Garder le README des données
+!data/README.md

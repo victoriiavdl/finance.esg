@@ -1,0 +1,127 @@
+Date            Ticker  Env_Score  Soc_Score  ESG_Score Entreprise  \
+0 2015-12-31  000660 KS Equity       2.94       2.84       3.47   SK Hynix   
+1 2016-01-31  000660 KS Equity       2.94       2.84       3.47   SK Hynix   
+2 2016-02-29  000660 KS Equity       2.94       2.84       3.47   SK Hynix   
+3 2016-03-31  000660 KS Equity       2.94       2.84       3.47   SK Hynix   
+4 2016-04-30  000660 KS Equity       2.94       2.84       3.47   SK Hynix   
+
+  Yahoo_Ticker    Return  
+0    000660.KS       NaN  
+1    000660.KS       NaN  
+2    000660.KS  0.098901  
+3    000660.KS -0.061667  
+4    000660.KS  0.000000
+
+---
+
+Missing Return %: 0.96
+Date range: 2015-12-31 -> 2026-01-31
+
+---
+
+Yahoo_Ticker
+000660.KS    0.016393
+9984.T       0.016393
+6857.T       0.016393
+META         0.008197
+TSLA         0.008197
+TSEM         0.008197
+NVDA         0.008197
+MU           0.008197
+MSFT         0.008197
+MPWR         0.008197
+Name: Return, dtype: float64
+
+---
+
+Pourcentage de valeurs manquantes par variable:
+
+---
+
+Nombre de lignes contenant au moins un NaN : 21
+Pourcentage de lignes affectées : 0.96%
+Taille avant nettoyage : (2196, 8)
+Taille après nettoyage : (2175, 8)
+
+---
+
+Statistiques descriptives :
+
+---
+
+Distribution de Ticker :
+Ticker
+000660 KS Equity    122
+6857 JP Equity      122
+TSLA US Equity      122
+TSEM IT Equity      122
+NVDA US Equity      122
+MU US Equity        122
+MSFT US Equity      122
+MPWR US Equity      122
+META US Equity      122
+LRCX US Equity      122
+Name: count, dtype: int64
+
+Distribution de Entreprise :
+Entreprise
+SK Hynix                    122
+Advantest                   122
+Tesla                       122
+Tower Semiconductor         122
+NVIDIA                      122
+Micron Technology           122
+Microsoft                   122
+Monolithic Power Systems    122
+Meta Platforms              122
+Lam Research                122
+Name: count, dtype: int64
+
+Distribution de Yahoo_Ticker :
+Yahoo_Ticker
+000660.KS    122
+6857.T       122
+TSLA         122
+TSEM         122
+NVDA         122
+MU           122
+MSFT         122
+MPWR         122
+META         122
+LRCX         122
+Name: count, dtype: int64
+
+---
+
+Nombre de valeurs extrêmes détectées par variable :
+{'Env_Score': np.int64(0), 'Soc_Score': np.int64(0), 'ESG_Score': np.int64(0), 'Return': np.int64(75)}
+
+---
+
+mean       std       min      max
+Env_Score  4.211692  2.139884  0.000000  7.61000
+Soc_Score  3.298923  1.731197  0.630000  7.91000
+ESG_Score  4.382256  1.378325  1.710000  7.07000
+Return     0.477233  0.823226 -0.650315  7.43437
+
+---
+
+mean       std
+Env_Score  1.639714e-16  1.002574
+Soc_Score  1.548619e-16  1.002574
+ESG_Score -5.556809e-16  1.002574
+Return    -4.099285e-17  1.002574
+
+---
+
+Env_Score  Soc_Score  ESG_Score    Return
+Cluster_KMeans                                           
+0                5.640411   5.067123   5.769315  0.790453
+1                3.356803   2.240902   3.552295  0.289815
+
+---
+
+coef_ESG     p_ESG        R2
+Model1  0.091890  0.011258  0.023670
+Model2 -0.074192  0.771670  0.043391
+Model3  0.112192  0.008899  0.277669
